@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/header.ejs') %>
+
+  <body>
+    <%- include('./partials/nav.ejs') %>
+
+    <div class="contact content">
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Full Name"
+          required
+        />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+        <label for="subject">Subject:</label>
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          placeholder="Subject"
+          required
+        />
+        <label for="message">Message:</label>
+        <textarea
+          type="text"
+          id="message"
+          name="message"
+          placeholder="Write your message here"
+          required
+        ></textarea>
+        <button type="submit" class="submit-button">Send</button>
+      </form>
+      <div id="confirmation" class="confirmation"></div>
+    </div>
+  </body>
+
+  <%- include('./partials/footer.ejs') %>
+</html>
