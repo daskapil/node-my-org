@@ -1,16 +1,16 @@
 const nodemailer = require("nodemailer");
 const dotenv = require("dotenv").config();
 
-const orgEmail = process.env.MAILER_USER;
+const orgEmail = process.env.ORG_EMAIL_ADDRESS;
 
 const transporter = nodemailer.createTransport({
-  service: process.env.MAILER_SERVICE,
-  host: process.env.MAILER_HOST,
-  port: process.env.MAILER_PORT,
+  service: process.env.SMTP_SERVICE,
+  host: process.env.SMTP_HOST,
+  port: process.env.SMTP_PORT,
   secure: true,
   auth: {
-    user: process.env.MAILER_USER,
-    pass: process.env.MAILER_PASSWORD,
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASSWORD,
   },
 });
 
