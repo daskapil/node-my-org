@@ -31,8 +31,22 @@ cd node-my-org
 
 npm install
 
-###### Run this project from you local machine
+###### Run this project from you local machine with "npm run dev" command
 
-npm run dev
+<p>npm run dev</p>
 
-###### Browse to localhost:4000
+<p>
+~node-my-org % npm run dev<br>
+<br>
+> my-org@1.0.0 dev<br>
+> nodemon server.js<br>
+<br>
+[nodemon] 3.1.4
+[nodemon] to restart at any time, enter `rs`<br>
+[nodemon] watching path(s): _._<br>
+[nodemon] watching extensions: js,mjs,cjs,json<br>
+[nodemon] starting `node server.js`<br>
+Server is running on port: 4000<br>
+</p>
+
+###### Browse to localhost:4000 to access the application
